@@ -1,0 +1,1 @@
+epoch,train_loss,val_loss,val_mIoU,val_mDICE,val_flood_IoU,val_flood_F1,val_flood_Precision,val_flood_Recall

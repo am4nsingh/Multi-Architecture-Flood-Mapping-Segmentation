@@ -1,0 +1,36 @@
+# Python virtual environment
+cv/
+
+# Dataset (large binary files)
+images/
+masks/
+
+# Model checkpoints
+**/checkpoints/
+
+# Prediction outputs
+**/predictions/
+
+# TensorBoard event files
+**/events.out.tfevents.*
+
+# Python cache
+**/__pycache__/
+*.pyc
+
+# Large archives
+*.zip
+
+# Claude Code config
+.claude/
+
+# Reports and documents
+*.docx
+*.pdf
+IMPLEMENTATION_PLAN.md
+
+# Legacy experiment data
+flood_mapping/legacy/
+
+# Duplicate source folder
+flood_mapping_without data/

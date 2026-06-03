@@ -1,0 +1,38 @@
+data:
+  after_dir: images/after
+  before_dir: images/before
+  masks_dir: masks
+  root: D:/CV
+  splits_csv: flood_mapping/splits.csv
+  stats_json: flood_mapping/data/train_stats.json
+  triplets_csv: flood_mapping/triplets.csv
+eval:
+  pred_dir: flood_mapping/predictions
+  report_dir: flood_mapping/reports
+  threshold: 0.5
+loss:
+  bce_weight: 0.5
+  dice_weight: 0.5
+model:
+  img_size: 256
+  in_channels: 2
+  name: transunet
+  num_classes: 1
+  vit_heads: 12
+  vit_hidden: 768
+  vit_layers: 12
+  vit_patches: 16
+training:
+  amp: true
+  batch_size: 8
+  checkpoint_dir: flood_mapping/checkpoints
+  early_stop_patience: 5
+  epochs: 30
+  grad_accum: 2
+  grad_clip: 1.0
+  log_dir: flood_mapping/runs
+  lr: 0.0001
+  num_workers: 4
+  seed: 1337
+  warmup_frac: 0.05
+  weight_decay: 0.0001

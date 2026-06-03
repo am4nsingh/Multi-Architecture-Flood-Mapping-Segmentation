@@ -1,0 +1,12 @@
+defaults:
+  - base
+
+model:
+  name: segformer
+  backbone: nvidia/mit-b2
+  in_channels: 2
+  num_classes: 1
+
+training:
+  lr: 6.0e-5
+  batch_size: 16

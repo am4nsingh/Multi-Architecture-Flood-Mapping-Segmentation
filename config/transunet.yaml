@@ -1,0 +1,17 @@
+defaults:
+  - base
+
+model:
+  name: transunet
+  in_channels: 2
+  num_classes: 1
+  img_size: 256
+  vit_patches: 16
+  vit_layers: 12
+  vit_heads: 12
+  vit_hidden: 768
+
+training:
+  lr: 1.0e-4
+  batch_size: 8
+  grad_accum: 2

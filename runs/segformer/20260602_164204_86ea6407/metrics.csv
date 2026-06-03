@@ -1,0 +1,2 @@
+epoch,train_loss,val_loss,val_mIoU,val_mDICE,val_flood_IoU,val_flood_F1,val_flood_Precision,val_flood_Recall
+1,0.885453,0.520022,0.602709,0.690165,0.348801,0.515390,0.363897,0.911836

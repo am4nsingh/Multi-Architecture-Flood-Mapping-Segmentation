@@ -1,0 +1,31 @@
+data:
+  root: "D:/CV"
+  before_dir: "images/before"
+  after_dir: "images/after"
+  masks_dir: "masks"
+  triplets_csv: "flood_mapping/triplets.csv"
+  splits_csv: "flood_mapping/splits.csv"
+  stats_json: "flood_mapping/data/train_stats.json"
+
+training:
+  seed: 1337
+  epochs: 30
+  batch_size: 8
+  num_workers: 4
+  lr: 1.0e-4
+  weight_decay: 1.0e-4
+  warmup_frac: 0.05
+  grad_clip: 1.0
+  early_stop_patience: 5
+  amp: true
+  log_dir: "flood_mapping/runs"
+  checkpoint_dir: "flood_mapping/checkpoints"
+
+loss:
+  bce_weight: 0.5
+  dice_weight: 0.5
+
+eval:
+  threshold: 0.5
+  pred_dir: "flood_mapping/predictions"
+  report_dir: "flood_mapping/reports"

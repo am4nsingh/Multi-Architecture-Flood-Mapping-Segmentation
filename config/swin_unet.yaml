@@ -1,0 +1,13 @@
+defaults:
+  - base
+
+model:
+  name: swin_unet
+  backbone: swin_tiny_patch4_window7_224
+  in_channels: 2
+  num_classes: 1
+  img_size: 256
+
+training:
+  lr: 1.0e-4
+  batch_size: 16
